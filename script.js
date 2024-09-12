@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const container = document.getElementById("article-container");
   
     // Fonction pour charger un article
-    function loadArticle(article) {
-      const markdownFile = `articles/${article}.md`;
+    function loadArticle(article1) {
+      const markdownFile = `${article1}.md`;
   
       // Charger le fichier Markdown
       fetch(markdownFile)
