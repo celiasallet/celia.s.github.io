@@ -2,5 +2,7 @@ title: "Exposition d'art moderne"
 image: "/assets/image1.jpg"
 description: "Une exploration de l'art moderne par des artistes contemporains."
 date: "2024-09-09"
-artists: "Jean Dupont, Marie Curie"
+artists: 
+  - "Jean Dupont"
+  - "Marie Curie"
 location: "Galerie d'Art, Paris"
