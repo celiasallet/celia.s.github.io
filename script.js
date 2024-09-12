@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch(`./assets/${yamlFile}`)
       .then((response) => {
         if (!response.ok) {
-          throw new Error("Fichier YAML non trouvé");
+          throw new Error("Fichier YAML non scripte chargé trouvé");
         }
         return response.text();
       })
