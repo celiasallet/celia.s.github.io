@@ -1,45 +1,185 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: "Lato", sans-serif;
   margin: 0;
-  padding: 0;
 }
 
-#article-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+h1 {
+  margin-top: 0;
+  padding-left: 5% !important;
+  font-size: 4rem;
+}
+
+h2{
+  font-weight: 300 !important;
+  font-size: 2.3rem;
+  margin: 0%;
+}
+
+/* -----------   nav barre ------------ */
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0; 
+  /* background-color: rgba(255, 255, 255, 0.3); */
   background-color: white;
+  
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.sidenav a {
+  padding: 5px 30px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  display: block;
+  transition: opacity 1.5s ease, transform 0.3s ease; 
+  opacity: 0; 
+}
+
+#closebtn {
+  text-align: center;
+  transition: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  font-size: 30px; 
+  color: black;
+  display: block;
+  cursor: pointer; 
+} 
+
+.sidenav a:hover {
+  color: #111;
+  animation: bounce 0.5s;
+}
+
+.sidenav .closebtn {
+  position: fixed;
+  font-size: 36px;
+  color: black;
+  cursor: pointer;
+}
+
+.burger {
+  font-size: 30px;
+  cursor: pointer;
+  top: 0%;
+  color: black;
+}
+
+img.burger{
+  width: 20px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+/* ----------- Frame --------- */
+
+.bigframe {
+  width: 95%;
+  height: 30%;
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+}
+
+.frame {
+  top: 20%;
+  right: 5%;
+  width: 50%;
+  height: 50vh !important;
+  overflow: hidden;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.presentation {
+  width: 50%;
+  right: 5%;
+  text-align: end;
+  font-weight: 200;
+}
+
+/* ------- Preview ------- */
+
+.first {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 3%;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 2%; 
+  margin-bottom: 5%;
 }
 
 .article {
-  border-bottom: 1px solid #ccc;
-  padding: 20px 0;
+  width: 48%; 
+  aspect-ratio: 9/12;
+  margin-bottom: 2%;
 }
 
-.article img {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: cover;
+/* ---------- Homefoot -------- */
+
+.homefoot {
+  margin: 0%;
+}
+.view {
+  text-align: center;
+  margin-bottom: 5%;
 }
 
-.article h2 {
-  font-size: 2em;
-  margin-top: 10px;
+.view a {
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px
 }
 
-.article .date,
-.article .description,
-.article .artists,
-.article .location {
-  margin: 5px 0;
-  font-style: italic;
-  color: #555;
+
+/* ------------- Mobile ----------- */
+@media (max-width: 768px) {
+  .article {
+    width: 100%; 
+  }
+  .frame { 
+    width: 95%;
+  }
+  .presentation{
+    width: 95%;
+    margin-bottom: 15%;
+  }
+  .sidenav a {
+    font-size: 1.5rem;
+  }
 }
 
-.article .content {
-  margin-top: 20px;
-  font-size: 1em;
-  line-height: 1.6;
-}

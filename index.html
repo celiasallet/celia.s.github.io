@@ -5,15 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mon site d'expositions</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <script src="scripts.js"></script>
+  <script src="nav.js"></script>
 </head>
 <body>
-  <div id="article-container">
-    <p>Chargement des articles...</p>
+<header>
+<h2>Multi-Disciplinary <br>Designer</h2>
+<nav>
+<img class="burger" onclick="openNav()" src="assets/Instagram_Glyph_Black.jpg"></span>
+<div id="mySidenav" class="sidenav">
+  <a onclick="closeNav()">X</a>
+  <a href="#">Infos</a>
+  <a href="#">Projets</a>
+  <a href="#">Inspirations</a>
+  <a href="#">Contact</a>
+</div>
+</nav>
+</header>
+<section>
+<article class="bigframe">
+  <div class="frame">
+    <img class="home" src="assets/Untitled_Artwork-1.PNG" alt="">
   </div>
+  <h5 class="presentation">With a background in Fashion Design&nbsp;and&nbsp;Visual&nbsp;Communication,&nbsp;I’m&nbsp;developing <br> Full-Stack skills to create aesthetically-driven digital designs.</h5>
+</article>
+<article>
+  <h1>Celia&nbsp;S.</h1>
+</article>
+</section>
+<section id="article-container" class="first">
+</section>
+<footer class="homefoot">
+<h3 class="view"><a href="">View more</a></h3>
+</footer>
 
-  <!-- Inclure js-yaml pour parser les fichiers YAML -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
-  
-  <script src="scripts.js"></script>
+
+
 </body>
 </html>
