@@ -179,8 +179,9 @@ img.fermer {
 /* ------------- Mobile ----------- */
 @media (max-width: 768px) {
   .article {
-    width: 100%; 
+    width: 98%; 
   }
+
   .frame { 
     width: 95%;
   }
@@ -191,5 +192,8 @@ img.fermer {
   .sidenav a {
     font-size: 1.5rem;
   }
+  img.burger{
+    margin-top: 15px;
+}
 }
 
