@@ -365,11 +365,11 @@ img.fermer {
     width: 95%;
   }
   .presentation{
-    width: 95%;
+    width: 90%;
     margin-bottom: 15%;
   }
   .sidenav a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   img.burger{
     margin-top: 20px;
@@ -399,9 +399,12 @@ img.fermer {
   column-count: 1; 
 }
 .arriere {
-  padding-left: 10%;
-  width: 20px !important;
+  padding-left: 5%;
+  width: 25px !important;
 
+}
+.view {
+  font-size: 0.5rem;
 }
 }
 
