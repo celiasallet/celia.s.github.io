@@ -197,6 +197,7 @@ img.fermer {
   margin: 0%;
 }
 .view {
+  margin-top: 5%;
   text-align: center;
   margin-bottom: 5%;
 }
@@ -390,6 +391,11 @@ img.fermer {
 }
 .inspi {
   column-count: 2; 
+}
+.arriere {
+  padding-left: 10%;
+  width: 25px;
+
 }
 }
 
