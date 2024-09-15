@@ -2,17 +2,50 @@ body {
   font-family: "Lato", sans-serif;
   margin: 0;
 }
-
+/* my name */
 h1 {
   margin: 0;
   padding-left: 5% !important;
   font-size: 4rem;
 }
 
+/* page title */
 h2{
   font-weight: 300 !important;
   font-size: 2.3rem;
   margin: 0%;
+  padding: 0%;
+}
+
+/* projet bold title */
+h3{
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+
+/* type of projet */
+h4{
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+/* descriptions  */
+h5{
+  font-weight: 100;
+  font-size: 0.9rem !important;
+  margin: 5px 0%;
+
+}
+
+/* dates */
+h6{
+  margin: 0%;
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 500;
+
 }
 
 /* -----------   nav barre ------------ */
@@ -29,9 +62,8 @@ header{
   z-index: 1;
   top: 0;
   right: 0; 
-  /* background-color: rgba(255, 255, 255, 0.3); */
+  /* background-color: rgba(255, 255, 255, 0.3);   fond de la nav opacité */
   background-color: white;
-  
   overflow-x: hidden;
   transition: 0.5s;
   display: flex;
@@ -105,6 +137,7 @@ img.fermer {
 /* ----------- Frame --------- */
 
 .bigframe {
+  margin-top: 3%;
   width: 95%;
   height: 30%;
   align-items: end;
@@ -115,7 +148,7 @@ img.fermer {
 .frame {
   top: 20%;
   right: 5%;
-  width: 50%;
+  width: 70%;
   height: 50vh !important;
   overflow: hidden;
 }
@@ -143,7 +176,7 @@ img.fermer {
 /* ------- Preview ------- */
 
 .first {
-  margin-top: 2%;
+  margin-top: 5%;
   margin-left: 5%;
   margin-right: 3%;
   display: flex;
@@ -174,8 +207,149 @@ img.fermer {
   text-underline-offset: 4px;
   text-decoration-thickness: 1px
 }
+/* ---------- PPROJET PAGE CARROUSSEL  ----------- */
 
+.carousel-container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  position: relative; 
+}
 
+.carousel {
+  display: flex;
+  gap: 2%;
+  transition: transform 0.5s ease-in-out;
+  overflow-x: auto; 
+}
+
+.layout {
+  /* Agrandir les carré vvv */
+  flex: 1 0 40%; 
+  box-sizing: border-box;
+  color: black;
+  text-align: left;
+  margin-right: 2%;
+  padding: 0;
+}
+
+.layout a {
+  text-decoration: none;
+  color: black;
+}
+
+.boximg {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.carouimg {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; 
+  transform: translate(-50%, -50%);
+}
+
+.carousel::-webkit-scrollbar {
+  height: 5%;
+}
+/* -------- PAGE SOLO PROJET -------- */
+
+.soloframe {
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  gap: 5%;
+}
+
+.work {
+  width: 70%;
+}
+
+.fit {
+  overflow: hidden; 
+  height: 60vh; 
+  position: relative; 
+}
+
+.soloimg {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  align-items: center;
+  height: 100%;
+}
+
+.soloimg img {
+  height: 100%;
+  width: auto;
+  display: inline-block;
+  object-fit: contain;
+  cursor: none; 
+}
+
+.cursor-text {
+  position: absolute;
+  pointer-events: none; 
+  display: none;
+  z-index: 10; 
+}
+.cursor-text img{
+  width: 30px;
+}
+.soloimg::-webkit-scrollbar {
+  display: none; 
+}
+
+.soloimg {
+  scrollbar-width: none; 
+}
+
+.soloimg {
+  -ms-overflow-style: none; 
+}
+
+.arriere {
+  margin-top: 5%;
+  padding-left: 5%;
+  width: 45px;
+    transform: scaley(-1);
+}
+
+/* -------------page inspirationss ------------- */
+.inspiframe {
+  padding-left: 4%;
+  width: 92%;
+  margin-bottom: 5%;
+}
+.inspi {
+  column-count: 3; 
+  column-gap: 10px; 
+  padding: 10px; 
+}
+
+.image-item {
+  display: inline-block; 
+  width: 100%;
+  margin-bottom: 10px; 
+  break-inside: avoid; 
+}
+
+.image-item img {
+  width: 100%; 
+  height: auto; 
+  display: block; 
+}
 /* ------------- Mobile ----------- */
 
 @media (max-width: 768px) {
@@ -195,6 +369,27 @@ img.fermer {
   }
   img.burger{
     margin-top: 50px;
+}
+.layout {
+  flex: 1 0 92%;
+}
+.soloframe {
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  gap: 0%;
+}
+.work {
+  width: 100%;
+}
+.workdesc {
+  padding-left: 0%;
+  margin-left: 1%;
+}
+.inspi {
+  column-count: 2; 
 }
 }
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celia.S</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script src="scriptprojet.js"></script>
+    <script src="cursor.js"></script>
+    <script src="nav.js"></script>
+    </head>
+<body>
+    <header>
+        <h2>Detailed&nbsp;Project<br>Showcase&nbsp;&&nbsp;Gallery</h2>
+            <nav>
+                <img class="burger" onclick="openNav()" src="assets/icones/menu.png"></span>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="index.html">Home</a>
+                        <a href="projets.html">Projets</a>
+                        <a href="inspirations.html">Inspirations</a>
+                        <a href="#">Contact</a>
+                        <a onclick="closeNav()"><img class="fermer" src="assets/icones/fermer.png" alt=""></a>
+                    </div>
+            </nav>
+    </header>
+    <section class="soloframe">
+        <article class="work">
+            <div class="fit">
+                <div class="soloimg" id="images"></div>
+                <span class="cursor-text"><img src="assets/icones/droit.png" alt=""></span> <!-- Texte du curseur -->
+            </div>
+        </article>
+        <article class="workdesc">
+            <h3 id="title"></h3>
+            <h4 id="type"></h4>
+            <h6 id="date"></h6>
+            <h5 id="description"></h5>
+        </article>
+    </section>      
+       <div class="carousel-indicators"></div>   
+            <a href="projets.html"><img class="arriere" src="assets/icones/en-arriere.png" alt=""></a>
+      </div>
+</body>
+</html>

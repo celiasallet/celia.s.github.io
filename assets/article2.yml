@@ -1,8 +1,10 @@
-title: "Photographie contemporaine"
-image: "assets/Untitled_Artwork-1.PNG"
+title: "Bling That Look!"
+images:
+  - "illumoune.jpg"  # Changer "image" en "images" pour correspondre au code JavaScript
+  - "fluid.jpeg"
 description: "Les nouvelles tendances dans la photographie artistique."
-date: "2024-10-15"
+date: "2021"
 artists: 
   - "Pierre Martin"
   - "Sophie Dubois"
-location: "Musée d'Art Moderne, Lyon"
+type: "Adobe Suite & Collages"

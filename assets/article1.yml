@@ -1,8 +1,10 @@
-title: "Exposition d'art moderne"
-image: "assets/Untitled_Artwork-1.PNG"
+title: "Nouvoilà Theme Party"
+images:
+  - "fluid.jpeg"
+  - "illumoune.jpg"
 description: "Une exploration de l'art moderne par des artistes contemporains."
-date: "2024-09-09"
+date: "2020 - 2023"
 artists: 
   - "Jean Dupont"
   - "Marie Curie"
-location: "Galerie d'Art, Paris"
+type: "Procreate & Adobe Suite"
