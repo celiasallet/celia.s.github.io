@@ -354,6 +354,9 @@ img.fermer {
 /* ------------- Mobile ----------- */
 
 @media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
   .article {
     width: 98%; 
     margin-bottom: 5%;
