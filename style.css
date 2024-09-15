@@ -366,7 +366,7 @@ img.fermer {
   }
   .presentation{
     width: 90%;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
   }
   .sidenav a {
     font-size: 1.2rem;
@@ -404,7 +404,9 @@ img.fermer {
 
 }
 .view {
-  font-size: 0.5rem;
+  padding-top: 10%;
+  margin-top: 5%;
+  font-size: 0.8rem;
 }
 }
 
