@@ -369,7 +369,10 @@ img.fermer {
     font-size: 1.5rem;
   }
   img.burger{
-    margin-top: 50px;
+    margin-top: 20px;
+    width: 20px;
+    right: 5%;
+    position: relative;
 }
 .layout {
   flex: 1 0 92%;
