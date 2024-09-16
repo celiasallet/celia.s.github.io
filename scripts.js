@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("article-container");
 
-  const articles = ['article2.yml']; //  , 'article3.yml', 'article4.yml' Corrige la répétition
+  const articles = ['article3.yml',,'article4.yml']; //  , 'article3.yml', 'article4.yml' Corrige la répétition
 
  
   function loadYAMLFile(yamlFile) {
@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const articleHTML = `
           <article class="article">
             <img class="home" src="./assets/img/${firstImage}" alt="${data.title}">
-            <h3>${data.title}</h3>
           </article>
         `;
 

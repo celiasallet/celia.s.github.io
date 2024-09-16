@@ -8,7 +8,7 @@ function openNav() {
   links.forEach((link, index) => {
     setTimeout(() => {
       link.style.opacity = "1"; 
-    }, index * 600);
+    }, index * 400);
   });
 }
 

@@ -1,8 +1,10 @@
-title: "Squash It Down !"
-image: "assets/Untitled_Artwork-1.PNG"
-description: "Les nouvelles tendances dans la photographie artistique."
-date: "2024"
+title: "Nouvoilà Theme Parties"
+images:
+  - "theme1.JPG"
+  - "theme2.JPG"
+  - "theme3.JPG"
+description: "As a graphic designer and community manager assistant for the Nouvoilà Festival, I have the creative freedom each year to design the poster for the themed evening."
+date: "2020 - 2023"
 artists: 
-  - "Pierre Martin"
-  - "Sophie Dubois"
-location: "Html, CSS & JavaScript"
+  - "Celia Sallet"
+type: "Procreate & Adobe Suite"

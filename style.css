@@ -161,7 +161,7 @@ img.fermer {
 }
 
 .presentation {
-  width: 50%;
+  width: 30%;
   right: 5%;
   text-align: end;
   font-weight: 200;
@@ -226,7 +226,7 @@ img.fermer {
 
 .layout {
   /* Agrandir les carré vvv */
-  flex: 1 0 40%; 
+  flex: 1 0 35%; 
   box-sizing: border-box;
   color: black;
   text-align: left;
@@ -256,9 +256,20 @@ img.fermer {
   object-position: center; 
   transform: translate(-50%, -50%);
 }
-
 .carousel::-webkit-scrollbar {
-  height: 5%;
+  display: none; 
+}
+.nextflex img {
+  width: 30px;
+}
+
+.nextflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightflex  {
+  align-self: center;
 }
 /* -------- PAGE SOLO PROJET -------- */
 
@@ -289,6 +300,7 @@ img.fermer {
   white-space: nowrap;
   align-items: center;
   height: 100%;
+  gap: 3%;
 }
 
 .soloimg img {
@@ -297,6 +309,7 @@ img.fermer {
   display: inline-block;
   object-fit: contain;
   cursor: none; 
+  
 }
 
 .cursor-text {
@@ -307,6 +320,9 @@ img.fermer {
 }
 .cursor-text img{
   width: 30px;
+}
+.cursor-text2 img {
+ display: none;
 }
 .soloimg::-webkit-scrollbar {
   display: none; 
@@ -321,9 +337,9 @@ img.fermer {
 }
 
 .arriere {
-  margin-top: 5%;
-  padding-left: 5%;
-  width: 45px;
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 40px;
   transform: scaley(-1);
 }
 
@@ -334,7 +350,7 @@ img.fermer {
   margin-bottom: 5%;
 }
 .inspi {
-  column-count: 3; 
+  column-count: 4; 
   column-gap: 10px; 
   padding: 10px; 
 }
@@ -351,6 +367,35 @@ img.fermer {
   height: auto; 
   display: block; 
 }
+
+/* ----------------PAGE CONTACT ---------------- */
+
+.contact {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+   
+}
+.boutme {
+  width: 60%;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.connect {
+  width: 100%;
+}
+.connect ul{
+  margin: 0%;
+  padding: 0%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5% !important;
+}
+
 /* ------------- Mobile ----------- */
 
 @media (max-width: 768px) {
@@ -365,7 +410,7 @@ img.fermer {
     width: 95%;
   }
   .presentation{
-    width: 90%;
+    width: 95%;
     margin-bottom: 5%;
   }
   .sidenav a {
@@ -376,37 +421,57 @@ img.fermer {
     width: 20px;
     right: 5%;
     position: relative;
-}
-.layout {
-  flex: 1 0 92%;
-}
-.soloframe {
-  padding-left: 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 90%;
-  gap: 0%;
-}
-.work {
-  width: 100%;
-}
-.workdesc {
-  padding-left: 0%;
-  margin-left: 1%;
-}
-.inspi {
-  column-count: 1; 
-}
-.arriere {
-  padding-left: 5%;
-  width: 25px !important;
+  }
+  .layout {
+    flex: 1 0 92%;
+  }
+  .soloframe {
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    gap: 0%;
+  }
+  .work {
+    width: 100%;
+  }
+  .workdesc {
+    padding-left: 0%;
+    margin-left: 1%;
+  }
+  .inspi {
+    column-count: 2; 
+  }
+  .arriere {
+    padding-left: 1%;
+    width: 25px !important;
 
-}
-.view {
-  padding-top: 10%;
-  margin-top: 5%;
-  font-size: 0.8rem;
-}
+  }
+  .view {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 0.9rem;
+  }
+  .cursor-text img  {
+    display: none;
+  }
+  .cursor-text2 img {
+    display: block;
+    width: 35px;
+  }
+  .cursor-text2 {
+    position: fixed;
+    top: 66%;
+    right: 8%;
+  }
+  .connect ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .connect ul li {
+    margin: 10%;
+  }
 }
 
