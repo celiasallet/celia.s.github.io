@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("carousel");
 
-  const articles = ['article1.yml', 'article2.yml', 'article3.yml', 'article4.yml', 'article5.yml'];
+  const articles = ['article1.yml', 'article2.yml', 'article3.yml', 'article4.yml', 'article5.yml', 'article6.yml'];
 
   
   function loadYAMLFile(yamlFile) {
