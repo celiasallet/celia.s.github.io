@@ -466,15 +466,15 @@ img.fermer {
   }
 
   .fleche {
-    position: fixed;
-    
-    right: 5%;
+    position: absolute; 
+    bottom: 10px; 
+    left: 10px;
   }
 
-  .cursor-text2 {
-    display: block;
-    position: relative; 
-  }
+.cursor-text2 {
+  display: block;
+    cursor: pointer; 
+}
  
   .connect ul {
     display: flex;
@@ -482,7 +482,7 @@ img.fermer {
     justify-content: center;
   }
   .connect ul li {
-    margin: 30%;
+    margin: 10%;
   }
 }
 
