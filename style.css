@@ -396,6 +396,10 @@ img.fermer {
   margin-bottom: 5% !important;
 }
 
+.cursor-text2 {
+  display: none;
+}
+
 /* ------------- Mobile ----------- */
 
 @media (max-width: 768px) {
@@ -460,11 +464,18 @@ img.fermer {
     display: block;
     width: 35px;
   }
-  .cursor-text2 {
+
+  .fleche {
     position: fixed;
-    top: 66%;
-    right: 8%;
+    
+    right: 5%;
   }
+
+  .cursor-text2 {
+    display: block;
+    position: relative; 
+  }
+ 
   .connect ul {
     display: flex;
     flex-wrap: wrap;
