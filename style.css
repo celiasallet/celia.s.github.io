@@ -482,9 +482,8 @@ img.fermer {
     justify-content: center;
   }
   .connect ul li {
-    margin-right: 15%;
-    margin-left: 15%;
-    margin-bottom: 5%;
+    margin: 15% 5% !important;
+
   }
 }
 
